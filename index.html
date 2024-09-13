@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn font icon css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Ramish Razzaq</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="a">Home</a></li>
+                        <li><a href="a">portfolio</a></li>
+                        <li><a href="a">resume</a></li>
+                        <li><a href="a">blog</a></li>
+                        <li><a href="a">contact</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="ramu.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">frontend developer</span></h5>
+                    <h1>Ramish Razzaq</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum ea 
+                        quidem quis esse mollitia veniam nam voluptas at deleniti voluptates? Doloremque 
+                        cumque illo quibusdam sapiente, delectus quas sequi ad.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download cv</a>
+                        <a href="#" class="btn">contact</a> 
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        /**  creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classlist.toggle("click");
+            nav.classlist.toggle("open");
+        })
+
+        var typed=new typed(".input" ,{
+            Strings:["fronted developer","web developer","ux degner"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
